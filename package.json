@@ -1,0 +1,39 @@
+{
+  "name": "node-examples",
+  "version": "0.0.1",
+  "description": "Shows a basic usage of the Avail polkadot js wrapper",
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "npm run clean && tsc",
+    "connect": "bun run src/connect.ts",
+    "transfer": "bun run src/tx-balance-transfer.ts",
+    "transfer-mortal-period": "bun run src/tx-balance-transfer-mortal-period.ts",
+    "data-submission": "bun run src/tx-data-availability-data-submission.ts",
+    "create-app-id": "bun run src/tx-data-availability-create-application-key.ts",
+    "staking-nominate": "bun run src/tx-staking-nominate-full-example.ts",
+    "staking-payout": "bun run src/tx-staking-payout-stakers.ts",
+    "staking-validate": "bun run src/tx-staking-validate-full-example.ts",
+    "estimate-transaction-fees": "bun run src/estimate-transaction-fees.ts",
+    "subscribe-blocks": "bun run src/subscribe-blocks.ts",
+    "query-app-data": "bun run src/rpc-kate-query-app-data.ts",
+    "query-proof": "bun run src/rpc-kate-query-proof.ts",
+    "query-data-proof": "bun run src/rpc-kate-query-data-proof.ts",
+    "query-block-length": "bun run src/rpc-kate-query-block-length.ts",
+    "query-rows": "bun run src/rpc-kate-query-rows.ts",
+    "submit-proposal": "bun run src/submit-proposal.ts",
+    "validium": "bun run src/validium.ts",
+    "batch-tx": "bun run src/tx-batch-example.ts",
+    "check-tx": "bun run src/tx-status-checker.ts"
+  },
+  "dependencies": {
+    "avail-js-sdk": "^0.3.0",
+    "ethers": "^6.13.2",
+    "polkadot": "^1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  },
+  "resolutions": {
+    "ws": ">=8.17.1"
+  }
+}
